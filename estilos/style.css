@@ -29,7 +29,7 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
     overflow: hidden;
 
     background-color: white;
@@ -40,6 +40,7 @@ section#login {
 
     transition: width .3s,  height .3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem {
@@ -65,15 +66,39 @@ div#form > p {
 }
 form > div.place {
     background-color: #5f2c82;
+    border: 5px #5f2c82;
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
 div.place > label {
     display: none;
+}
+
+div.place > i {
+    color: white;
+    /*background-color:black ;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.place > input {
+    background-color: #8ae4e1;
+    font-size: 0,8em;
+    width:calc(100% - 46px);
+    height: 100%;
+    border: -px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-11.5px);
+}
+
+div.place > input:focus-within{
+    background-color: white;
 }
 
 form > input[type=submit] {
